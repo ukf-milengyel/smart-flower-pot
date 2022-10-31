@@ -1,0 +1,13 @@
+{
+    "pump_enable": true,
+    "manual_update_enable": true,
+    "update_delay": 60,
+    "pump_threshold": 0.25,
+    "pump_on_time": 3,
+    "status_led_threshold": [
+        0.3,
+        0.4,
+        0.45,
+        0.5
+    ]
+}
