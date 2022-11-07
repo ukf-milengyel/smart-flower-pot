@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "soil-sensor")(type "KiCad")(uri "${KIPRJMOD}/soil-sensor.kicad_sym")(options "")(descr ""))
+)

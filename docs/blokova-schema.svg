@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="351mm"
+   height="210mm"
+   viewBox="0 0 351 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="blokova-schema.svg"
+   inkscape:export-filename="C:\Users\Miro\Documents\smart-flower-pot\docs\blokova-schema.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:lockguides="true"
+     inkscape:zoom="1.0265563"
+     inkscape:cx="456.38023"
+     inkscape:cy="357.0189"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-grids="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid199" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="104.96175"
+       y="70.360573"
+       width="256.83817"
+       height="105.04867"
+       id="rect3399" />
+    <rect
+       x="104.96175"
+       y="70.360573"
+       width="256.83817"
+       height="105.04867"
+       id="rect3399-6" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101"
+       width="47.786198"
+       height="23.867605"
+       x="153.29715"
+       y="88.643066" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,129.73026,78.447878)"
+       id="text3397"
+       style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3399);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="104.96094"
+         y="89.824344"
+         id="tspan1066"><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan1064">Raspberry pi</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2"
+       width="47.786198"
+       height="23.867605"
+       x="82.020836"
+       y="88.643066" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,63.932075,25.538939)"
+       id="text3397-6"
+       style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect3399-6);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="105.66335"
+       y="95.472374"
+       id="text20661"><tspan
+         sodipodi:role="line"
+         id="tspan20659"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="105.66335"
+         y="95.472374">2-kanálový</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="105.66335"
+         y="102.52792"
+         id="tspan17467">AD prevodník</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="105.66335"
+         y="109.58347"
+         id="tspan16541">(MCP3202)</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="105.66335"
+         y="116.63902"
+         id="tspan29697" /></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-3"
+       width="47.786198"
+       height="23.867605"
+       x="153.29713"
+       y="136.26807" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="177.29762"
+       y="143.34918"
+       id="text20661-4"><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="177.29762"
+         y="143.34918"
+         id="tspan29697-9">Senzor teploty</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="177.29762"
+         y="150.40474"
+         id="tspan33275">a vlhkosti</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="177.29762"
+         y="157.46028"
+         id="tspan33273">(DHT11)</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="177.29762"
+         y="164.51584"
+         id="tspan28099" /></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-6"
+       width="47.786198"
+       height="23.867605"
+       x="224.89584"
+       y="88.643066"
+       inkscape:connector-avoid="true" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="248.72272"
+       y="99.480247"
+       id="text20661-5"><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="248.72272"
+         y="99.480247"
+         id="tspan6221">Relé</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="248.72272"
+         y="106.5358"
+         id="tspan8569">(SRD-05VDC-SL-C)</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="248.72272"
+         y="113.59135"
+         id="tspan44417" /></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-67"
+       width="47.786198"
+       height="23.867605"
+       x="291.04166"
+       y="88.587959" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="313.84744"
+       y="101.92867"
+       id="text20661-8"><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="313.84744"
+         y="101.92867"
+         id="tspan29697-90">Vodná pumpa</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-9"
+       width="47.785999"
+       height="23.867605"
+       x="13.229167"
+       y="113.71574" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="36.839169"
+       y="120.02432"
+       id="text20661-46"><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="36.839169"
+         y="120.02432"
+         id="tspan29697-94">Kapacitný snímač</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="36.839169"
+         y="127.07987"
+         id="tspan23189">vlhkosti pôdy</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="36.839169"
+         y="134.13542"
+         id="tspan23187">(KS0049)</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="36.839169"
+         y="141.19098"
+         id="tspan50169" /></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-1"
+       width="47.786198"
+       height="23.867605"
+       x="203.72917"
+       y="48.900463" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="227.27684"
+       y="55.502014"
+       id="text20661-84"><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="227.27684"
+         y="55.502014"
+         id="tspan29697-3">Tlačidlo</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="227.27684"
+         y="62.557564"
+         id="tspan61094">(Na manuálne</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="227.27684"
+         y="69.613113"
+         id="tspan67876">obnovenie dát)</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-5"
+       width="47.786198"
+       height="23.867605"
+       x="108.31798"
+       y="48.955566" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="132.24884"
+       y="62.952011"
+       id="text20661-41"><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="132.24884"
+         y="62.952011"
+         id="tspan29697-1">4x stavové LED</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.148905"
+       id="rect7101-2-0"
+       width="47.786198"
+       height="23.867605"
+       x="13.067968"
+       y="63.444893" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="36.311199"
+       y="77.258865"
+       id="text20661-0"><tspan
+         sodipodi:role="line"
+         style="font-size:5.64444px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="36.311199"
+         y="77.258865"
+         id="tspan29697-8">Fotorezistor</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 129.80703,100.57687 h 23.49012"
+       id="path79867"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2"
+       inkscape:connection-end="#rect7101" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 60.854166,75.378695 H 105.91393 V 88.643066"
+       id="path79869"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2-0"
+       inkscape:connection-end="#rect7101-2" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 61.015166,125.64954 H 105.91393 V 112.51067"
+       id="path79871"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2-9"
+       inkscape:connection-end="#rect7101-2" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 224.89584,100.57687 H 201.08335"
+       id="path79877"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2-6"
+       inkscape:connection-end="#rect7101" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 272.68204,100.55696 18.35962,-0.0153"
+       id="path79879"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2-6"
+       inkscape:connection-end="#rect7101-2-67" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 177.19025,136.26807 v -23.7574"
+       id="path80757"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2-3"
+       inkscape:connection-end="#rect7101" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.20957px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.10418,60.889369 h 13.22915 v 27.753697"
+       id="path36252"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 203.72917,60.834266 h -26.53892 v 27.8088"
+       id="path36538"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#rect7101-2-1"
+       inkscape:connection-end="#rect7101" />
+  </g>
+</svg>
