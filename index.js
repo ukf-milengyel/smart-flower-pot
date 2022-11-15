@@ -51,10 +51,10 @@ function generateTable(data) {
     const tbody = document.createElement("tbody");
 
     document.getElementById("t_soil").innerHTML = (Math.round (data[0].soil_humidity * 1000) / 10) + "%";
-    document.getElementById("t_temp").innerHTML = data[0].temperature + "c";
+    document.getElementById("t_temp").innerHTML = data[0].temperature + "°C";
     document.getElementById("t_light").innerHTML = (Math.round (data[0].light_level * 1000) / 10) + "%";
     document.getElementById("t_air").innerHTML = data[0].air_humidity + "%";
-    document.getElementById("t_last").innerHTML = data[0].timestamp;
+    document.getElementById("t_last").innerHTML = new Date(data[0].timestamp).toLocaleString();
 
     for(let i = 0; i < data.length; i++){
         const row = document.createElement("tr");
@@ -65,7 +65,7 @@ function generateTable(data) {
         row.appendChild(air_humidity);
 
         var soil_humidity  = document.createElement("td");
-        const soilHumidity_text = document.createTextNode(data[i].soil_humidity * 100);
+        const soilHumidity_text = document.createTextNode( (Math.round (data[i].soil_humidity * 1000) / 10) );
         soil_humidity.appendChild(soilHumidity_text);
         row.appendChild(soil_humidity);
 
@@ -75,12 +75,12 @@ function generateTable(data) {
         row.appendChild(temp);
 
         var light_level  = document.createElement("td");
-        const lightLevel_text = document.createTextNode(data[i].light_level * 100);
+        const lightLevel_text = document.createTextNode(Math.round (data[i].light_level * 1000) / 10);
         light_level.appendChild(lightLevel_text);
         row.appendChild(light_level);
 
         var time  = document.createElement("td");
-        const time_text = document.createTextNode(data[i].timestamp);
+        const time_text = document.createTextNode(new Date(data[i].timestamp).toLocaleString());
         time.appendChild(time_text);
         row.appendChild(time);
 

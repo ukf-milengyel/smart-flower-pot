@@ -66,11 +66,6 @@ function drawGraph_AirHumidity(XY) {
     datasets: [
       {
         label: "Air humidity (%)",
-        pointBackgroundColor: function (context) {
-          var index = context.dataIndex;
-          var value = XY[index].type;
-          return value == 1 ? "red" : "blue";
-        },
         data: XY.map((a) => a.y),
       },
     ],
@@ -80,7 +75,18 @@ function drawGraph_AirHumidity(XY) {
     type: "line",
     data: data,
     options: {
-      showLine: false,
+      pointRadius: 1,
+      pointBackgroundColor: 'blue',
+      cubicInterpolationMode: 'monotone',
+      spanGaps: true,
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'day',
+          }
+        }
+      },
     },
   };
 
@@ -100,11 +106,6 @@ function drawGraph_SoilHumidity(XY) {
     datasets: [
       {
         label: "Soil humidity (%)",
-        pointBackgroundColor: function (context) {
-          var index = context.dataIndex;
-          var value = XY[index].type;
-          return value == 1 ? "green" : "blue";
-        },
         data: XY.map((a) => a.y),
       },
     ],
@@ -114,7 +115,18 @@ function drawGraph_SoilHumidity(XY) {
     type: "line",
     data: data,
     options: {
-      showLine: false,
+      pointRadius: 1,
+      pointBackgroundColor: 'blue',
+      cubicInterpolationMode: 'monotone',
+      spanGaps: true,
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'day',
+          }
+        }
+      }
     },
   };
 
@@ -134,11 +146,6 @@ function drawGraph_temperature(XY) {
     datasets: [
       {
         label: "Temperature (°C)",
-        pointBackgroundColor: function (context) {
-          var index = context.dataIndex;
-          var value = XY[index].type;
-          return value == 1 ? "orange" : "blue";
-        },
         data: XY.map((a) => a.y),
       },
     ],
@@ -148,7 +155,18 @@ function drawGraph_temperature(XY) {
     type: "line",
     data: data,
     options: {
-      showLine: false,
+      pointRadius: 1,
+      pointBackgroundColor: 'blue',
+      cubicInterpolationMode: 'monotone',
+      spanGaps: true,
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'day',
+          }
+        }
+      }
     },
   };
 
@@ -168,11 +186,6 @@ function drawGraph_LightLevel(XY) {
     datasets: [
       {
         label: "Light level (%)",
-        pointBackgroundColor: function (context) {
-          var index = context.dataIndex;
-          var value = XY[index].type;
-          return value == 1 ? "yellow" : "blue";
-        },
         data: XY.map((a) => a.y),
       },
     ],
@@ -182,7 +195,18 @@ function drawGraph_LightLevel(XY) {
     type: "line",
     data: data,
     options: {
-      showLine: false,
+      pointRadius: 1,
+      pointBackgroundColor: 'blue',
+      cubicInterpolationMode: 'monotone',
+      spanGaps: true,
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'day',
+          }
+        }
+      }
     },
   };
 
