@@ -67,11 +67,11 @@
 
       <h3 class="mt-5">Actions</h3>
 
-      <button type="button" class="btn btn-success mt-3" style="width:50%" onclick="manualUpdate()">
+      <button id="updatebtn" type="button" class="btn btn-success mt-3" style="width:50%" onclick="manualUpdate()">
           <font size="6">Manual update</font>
       </button>
 
-      <button type="button" class="btn btn-primary mt-3" style="width:50%" onclick="restart()">
+      <button id="restartbtn" type="button" class="btn btn-primary mt-3" style="width:50%" onclick="restart()">
           <font size="6">Restart</font>
       </button>
       <h3 class="mt-5">History</h3>

@@ -16,6 +16,9 @@ function fetchData() {
 
 
 function restart(){
+    document.getElementById("restartbtn").disabled = true;
+    document.getElementById("updatebtn").disabled = true;
+
     fetch("http://localhost/project/manual_restart.php", {
     method: "get",
    
@@ -27,11 +30,25 @@ function restart(){
       throw new Error(response.statusText);
     })
     .then(function (response) {
-      alert("System is restarting")
+      alert("System is restarting");
+        let timer = 20;
+        const interval = setInterval(()=>{
+            if (timer<=0){
+                clearInterval(interval);
+                fetchData();
+                document.getElementById("restartbtn").disabled = false;
+                document.getElementById("updatebtn").disabled = false;
+            }else{
+                setSummary("Refreshing data... "+timer);
+                timer--;
+            }
+        }, 1000);
     });
 }
 
 function manualUpdate(){
+    document.getElementById("updatebtn").disabled = true;
+
     fetch("http://localhost/project/manual_update.php", {
     method: "get",
   })
@@ -42,7 +59,18 @@ function manualUpdate(){
       throw new Error(response.statusText);
     })
     .then(function (response) {
-      alert("Data will be updated")
+      alert("Data will be updated");
+      let timer = 5;
+      const interval = setInterval(()=>{
+          if (timer<=0){
+              clearInterval(interval);
+              fetchData();
+              document.getElementById("updatebtn").disabled = false;
+          }else{
+              setSummary("Refreshing data... "+timer);
+              timer--;
+          }
+      }, 1000);
     });
 }
 
@@ -88,6 +116,14 @@ function generateTable(data) {
     }
 
     table.appendChild(tbody);
+}
+
+function setSummary(text){
+    document.getElementById("t_soil").innerHTML = text;
+    document.getElementById("t_temp").innerHTML = text;
+    document.getElementById("t_light").innerHTML = text;
+    document.getElementById("t_air").innerHTML = text;
+    document.getElementById("t_last").innerHTML = text;
 }
 
 fetchData();
