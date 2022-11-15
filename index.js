@@ -57,6 +57,8 @@ function generateTable(data) {
     document.getElementById("t_last").innerHTML = data[0].timestamp;
 
     for(let i = 0; i < data.length; i++){
+        const row = document.createElement("tr");
+
         var air_humidity  = document.createElement("td");
         const airHumidity_text = document.createTextNode(data[i].air_humidity);
         air_humidity.appendChild(airHumidity_text);
