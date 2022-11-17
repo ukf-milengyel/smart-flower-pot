@@ -185,6 +185,7 @@ try:
             elif process.cmdline() == ["python", "manual_restart.py"]:
                 os.execv(sys.executable, ['python'] + sys.argv)
             elif process.cmdline() == ["python", "manual_water.py"]:
+                manual_update = True
                 manual_water = True
 
         if (next_check > now
