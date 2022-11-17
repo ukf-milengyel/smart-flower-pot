@@ -67,19 +67,38 @@
 
       <h3 class="mt-5">Actions</h3>
 
-      <button id="updatebtn" type="button" class="btn btn-success mt-3" style="width:50%" onclick="manualUpdate()">
-          <font size="6">Manual update</font>
+      <div>
+
+  <div style="width:50%;">
+      <button type="button" class="btn btn-primary mt-1 w-100" onclick="fetchData()">
+          Refresh data
       </button>
 
-      <button id="restartbtn" type="button" class="btn btn-primary mt-3" style="width:50%" onclick="restart()">
-          <font size="6">Restart</font>
+      <button type="button" class="btn btn-success mt-1 w-100" onclick="manualUpdate()">
+          Force update
+      </button>
+
+      <button type="button" class="btn btn-success mt-1 w-100" onclick="forceWater()">
+          Force watering
+      </button>
+
+      <button type="button" class="btn btn-warning mt-1 w-100" onclick="restart()">
+          Restart
       </button>
       <h3 class="mt-5">History</h3>
   </div>
 
+  <div class="form" style="width:50%" align="left">
+      <label class="form-label" for="limit">Limit</label>
+      <input id="limit" class="form-control" value="100" min="10" type="number">
+      <label class="form-label" for="offset">Offset</label>
+      <input id="offset" class="form-control" value="0" min="0" type="number">
+      <button type="button" class="mt-3 btn btn-primary w-100" onclick="fetchData()">
+          Refresh data
+      </button>
+  </div>
 
-
-  <div class="container">
+  <div class="container mt-2">
     <table class="table text-center" id="table">
       <thead>
         <tr>

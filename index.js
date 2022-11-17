@@ -1,5 +1,9 @@
 function fetchData() {
-  fetch("get_data.php", {
+  disableButtons(true);
+  setSummary("-");
+  const limit = document.getElementById("limit").value;
+  const offset = document.getElementById("offset").value;
+  fetch("get_data.php?limit="+limit+"&offset="+offset, {
     method: "get",
   })
     .then(function (response) {
@@ -10,14 +14,22 @@ function fetchData() {
     })
     .then(function (response) {
       var data = JSON.parse(response);
-      generateTable(data);
+      for (const el of document.getElementsByTagName("tbody")) { el.remove(); }
+      if (data.length == 0){
+          setSummary("No data.");
+      }else{
+          generateTable(data);
+      }
+      let timer = 2;
+      setTimeout(()=>{
+        disableButtons(false);
+      }, 1000);
     });
 }
 
 
 function restart(){
-    document.getElementById("restartbtn").disabled = true;
-    document.getElementById("updatebtn").disabled = true;
+    disableButtons(true);
 
     fetch("manual_restart.php", {
     method: "get",
@@ -36,8 +48,6 @@ function restart(){
             if (timer<=0){
                 clearInterval(interval);
                 fetchData();
-                document.getElementById("restartbtn").disabled = false;
-                document.getElementById("updatebtn").disabled = false;
             }else{
                 setSummary("Refreshing data... "+timer);
                 timer--;
@@ -47,7 +57,7 @@ function restart(){
 }
 
 function manualUpdate(){
-    document.getElementById("updatebtn").disabled = true;
+    disableButtons(true);
 
     fetch("manual_update.php", {
     method: "get",
@@ -65,7 +75,6 @@ function manualUpdate(){
           if (timer<=0){
               clearInterval(interval);
               fetchData();
-              document.getElementById("updatebtn").disabled = false;
           }else{
               setSummary("Refreshing data... "+timer);
               timer--;
@@ -124,6 +133,13 @@ function setSummary(text){
     document.getElementById("t_light").innerHTML = text;
     document.getElementById("t_air").innerHTML = text;
     document.getElementById("t_last").innerHTML = text;
+}
+
+function disableButtons(state){
+    const collection = document.getElementsByTagName("button");
+    for (const el of collection) {
+        el.disabled = state;
+    }
 }
 
 fetchData();

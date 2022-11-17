@@ -176,6 +176,7 @@ try:
         now = datetime.datetime.now()
         # skip if next check has not been reached and button isnot pressed
         manual_update = False
+        manual_water = False
         button_pressed = not (GPIO.input(button) or not config["manual_update_enable"])
 
         for process in psutil.process_iter():
@@ -183,6 +184,8 @@ try:
                 manual_update = True
             elif process.cmdline() == ["python", "manual_restart.py"]:
                 os.execv(sys.executable, ['python'] + sys.argv)
+            elif process.cmdline() == ["python", "manual_water.py"]:
+                manual_water = True
 
         if (next_check > now
             and not button_pressed
@@ -230,7 +233,7 @@ try:
         pump_on = 0
         process_soil(s)
         if config["pump_enable"]:
-            pump_on = process_pump(s, now)
+            pump_on = process_pump(0 if manual_water else s, now)
 
         # save to database
         data = [ (s, l, temp, humidity, update_type, pump_on, now) ]

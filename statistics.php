@@ -33,6 +33,16 @@
 
 
   <div class="container text-center">
+    <div class="form mt-5" class="w-100">
+        <label class="form-label" for="limit">Limit</label>
+        <input id="limit" class="form-control" value="400" min="10" type="number">
+        <label class="form-label" for="offset">Offset</label>
+        <input id="offset" class="form-control" value="0" min="0" type="number">
+        <button type="button" class="mt-3 btn btn-primary w-100" onclick="fetchData()">
+            Refresh data
+        </button>
+    </div>
+
     <h1 class="mt-5">Air humidity</h1>
     <canvas id="airHumidity" class="mr-auto ml-auto my" style="width:100%;"></canvas>
     
