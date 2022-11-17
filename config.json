@@ -5,9 +5,9 @@
     "pump_threshold": 0.25,
     "pump_on_time": 3,
     "status_led_threshold": [
+        0.27,
         0.3,
         0.4,
-        0.45,
         0.5
     ]
 }
