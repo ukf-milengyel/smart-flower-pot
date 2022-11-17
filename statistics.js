@@ -1,4 +1,4 @@
-fetch("http://localhost/project/get_data.php", {
+fetch("get_data.php", {
   method: "get",
   // may be some code of fetching comes here
 })

@@ -18,7 +18,7 @@
 
 <body>
   <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-    <a class="navbar-brand" href="https://github.com/ukf-milengyel/smart-flower-pot/blob/main/settings.php"
+    <a class="navbar-brand" href="https://github.com/ukf-milengyel/smart-flower-pot/"
       target="_blank">SmartPot</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

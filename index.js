@@ -1,5 +1,5 @@
 function fetchData() {
-  fetch("http://localhost/project/get_data.php", {
+  fetch("get_data.php", {
     method: "get",
   })
     .then(function (response) {
@@ -19,7 +19,7 @@ function restart(){
     document.getElementById("restartbtn").disabled = true;
     document.getElementById("updatebtn").disabled = true;
 
-    fetch("http://localhost/project/manual_restart.php", {
+    fetch("manual_restart.php", {
     method: "get",
    
   })
@@ -49,7 +49,7 @@ function restart(){
 function manualUpdate(){
     document.getElementById("updatebtn").disabled = true;
 
-    fetch("http://localhost/project/manual_update.php", {
+    fetch("manual_update.php", {
     method: "get",
   })
     .then(function (response) {
