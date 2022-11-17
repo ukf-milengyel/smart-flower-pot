@@ -78,7 +78,7 @@
           Force update
       </button>
 
-      <button type="button" class="btn btn-success mt-1 w-100" onclick="forceWater()">
+      <button type="button" class="btn btn-success mt-1 w-100" onclick="manualWater()">
           Force watering
       </button>
 

@@ -42,14 +42,13 @@ function restart(){
       throw new Error(response.statusText);
     })
     .then(function (response) {
-      alert("System is restarting");
         let timer = 20;
         const interval = setInterval(()=>{
             if (timer<=0){
                 clearInterval(interval);
                 fetchData();
             }else{
-                setSummary("Refreshing data... "+timer);
+                setSummary("System restarting... "+timer);
                 timer--;
             }
         }, 1000);
@@ -69,7 +68,6 @@ function manualUpdate(){
       throw new Error(response.statusText);
     })
     .then(function (response) {
-      alert("Data will be updated");
       let timer = 5;
       const interval = setInterval(()=>{
           if (timer<=0){
@@ -81,6 +79,32 @@ function manualUpdate(){
           }
       }, 1000);
     });
+}
+
+function manualWater(){
+    disableButtons(true);
+
+    fetch("manual_water.php", {
+        method: "get",
+    })
+        .then(function (response) {
+            if (response.status >= 200 && response.status < 300) {
+                return response.text();
+            }
+            throw new Error(response.statusText);
+        })
+        .then(function (response) {
+            let timer = 20;
+            const interval = setInterval(()=>{
+                if (timer<=0){
+                    clearInterval(interval);
+                    fetchData();
+                }else{
+                    setSummary("Refreshing data... "+timer);
+                    timer--;
+                }
+            }, 1000);
+        });
 }
 
 function generateTable(data) {

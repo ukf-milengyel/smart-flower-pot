@@ -26,7 +26,7 @@ function fetchData(){
         }else{
           parseData(data);
         }
-        
+
         setTimeout(()=>{
           disableButtons(false);
         }, 5000);
